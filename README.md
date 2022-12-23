@@ -4,7 +4,7 @@ This repository contains the code and documentation for a 6 DOF arm chess playin
 ##Overview
 
 The robot consists of a 6 DOF arm mounted on a base, with an Xbox Kinect RGB-D camera positioned facing the arm and chess board. The robot uses the camera to perceive the chess board and the pieces, and uses multi-agent RL to learn how to play chess.
-Dependencies
+##Dependencies
 
 In order to run the code in this repository, you will need the following dependencies:
 
@@ -31,7 +31,7 @@ To run the code, follow these steps:
     Open a terminal and navigate to the root directory of this repository.
     Run the command python main.py.
 
-Training the RL agents
+##Training the RL agents
 
 To train the RL agents, follow these steps:
 
