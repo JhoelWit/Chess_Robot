@@ -1,0 +1,15 @@
+learning_rate: 1.0e-3
+n_steps: 1024
+batch_size: 64
+n_epochs: 10
+ent_coef: 1.5e-4
+verbose: 1
+tensorboard_log: "chess_model_tb"
+device: "cuda"
+seed: None
+
+learning_params:
+  timesteps: 1.0e+7
+  eval_frequency: 10_000
+  n_eval_episodes: 15
+  model_save_freq: 25_000

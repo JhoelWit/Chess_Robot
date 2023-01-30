@@ -1,0 +1,26 @@
+policy_kwargs:
+  policy_net:
+    activ: relu
+    hidden1: 64
+    hidden2: 32
+
+  value_net:
+    activ: relu
+    bias: True
+    hidden1: 64
+    hidden2: 32
+
+  bit_board:
+    activ: relu
+    hidden: 32
+    output: 16
+
+  cnn:
+    activ: relu
+    conv_kernel: 3
+    pool_kernel: 2
+    pool_stride: 2
+    hidden_channels: 2
+    output_channels: 1
+    hidden: 128
+    output: 64
