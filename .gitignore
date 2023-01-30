@@ -2,4 +2,4 @@
 *.pyc
 /wandb
 /chess_ppo_model
-/chess_tb_model
+/chess_model_tb
