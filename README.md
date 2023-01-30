@@ -1,9 +1,9 @@
-#6 DOF Arm Chess Playing Robot
+#Chess Playing Robot
 
-This repository contains the code and documentation for a 6 DOF arm chess playing robot that uses multi-agent reinforcement learning (RL) and an Xbox Kinect RGB-D camera for perception.
 ##Overview
 
-The robot consists of a 6 DOF arm mounted on a base, with an Xbox Kinect RGB-D camera positioned facing the arm and chess board. The robot uses the camera to perceive the chess board and the pieces, and uses multi-agent RL to learn how to play chess.
+This is a chess playing deep learning agent which uses PPO to learn an optimal policy.
+
 ##Dependencies
 
 In order to run the code in this repository, you will need the following dependencies:
@@ -13,30 +13,19 @@ In order to run the code in this repository, you will need the following depende
     PyGame
     OpenAI Gym
     TensorFlow or PyTorch (for training the RL agents)
-
-##Setup
-
-To set up the robot, follow these steps:
-
-    Install the dependencies listed above.
-    Clone this repository onto your local machine.
-    Connect the Xbox Kinect camera to your computer.
-    Connect the 6 DOF arm to your computer via USB.
-    Calibrate the arm and camera using the provided calibration scripts.
+    Wandb (for logging training sessions)
 
 ##Running the code
 
 To run the code, follow these steps:
 
     Open a terminal and navigate to the root directory of this repository.
-    Run the command python main.py.
+    Run the command python main.py with the required arguments.
 
-##Training the RL agents
-
-To train the RL agents, follow these steps:
-
-    Open a terminal and navigate to the agents directory.
-    Run the command python train.py.
+##Arguments
+    --train: run the script in training mode.
+    --test: run the script in testing mode.
+    Run main.py -h for the full list of arguments.
 
 ##Credits
 
